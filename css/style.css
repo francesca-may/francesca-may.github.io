@@ -1,0 +1,101 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    height: 10vh;
+    background-color: #d9d0ef;    
+    -webkit-box-shadow: inset 0px 3px 9px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: inset 0px 3px 9px 0px rgba(0,0,0,0.38);
+    box-shadow: inset 0px 3px 9px 0px rgba(0,0,0,0.38);
+    min-width: 50%;
+    min-height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 90vh;
+    background-color: #eee;
+    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.43);
+    box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.43);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Oxygen',sans-serif;
+    font-size: 1.2em;
+    font-weight:600;
+}
+li {
+    padding: 10px;
+    float: left;
+    display: inline-block;
+}
+li a {
+    display: block;
+    color: #666699;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Underline Animation http://bradsknutson.com/blog/css-sliding-underline/ */
+li:after {
+content: '';
+display: block;
+height: 2px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+}
+li:hover:after {
+width: 100%;
+background: #666699;
+}
+.contentWrap{
+    width: 70vw;
+    height: 70vh;
+    background-color: #d9d0ef;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    -webkit-box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.4);
+    font-family: 'Raleway', sans-serif;
+}
+.content{
+    font-size: 2em;
+    color: #666699;
+    font-weight: bold;
+}
+h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+a, a:active, a:visited {
+    text-decoration:none;
+    color: #666699;
+}
+#githubL:after {
+content: '';
+display: block;
+height: 2px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+}
+#githubL:hover:after {
+width: 100%;
+background: #666699;
+}
