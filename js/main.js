@@ -1,21 +1,14 @@
-window.onload = function () {
-    //'use strict';
-    $('h1').textillate({
-        in: {
-            effect: 'tada',
-            sync: false
-        }
-    });
-    $('#name').textillate({
-        initialDelay: 400,
-        in: {
-            effect: 'swing',
-            sync: false
-        }
-    });
-    
-    document.getElementById("btn").addEventListener("click", function () {
-        window.location.assign("https://github.com/francesca-may");
-    })
-    
-};
+$(document).ready(function(){
+    $("#home").on("click",function(){
+       location.assign("index.html");
+   });
+    $("#contact").on("click",function(){
+        location.assign("contact.html");
+   });
+    $("#projects").on("click",function(){
+        location.assign("projects.html");
+   });
+    $("#about").on("click",function(){
+        location.assign("about.html");
+   });
+});

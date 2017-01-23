@@ -1,0 +1,84 @@
+//Vars
+$bgCol: rgb(171,204,255);
+$bgImg: url(../media/background.png);
+$font1: 'Open Sans', sans-serif;
+$font2: 'Rubik' , sans-serif;
+$hoverC: rgba(29, 69, 129, 0.15);
+$menuTC: #fff;
+$bodyTC: rgb(29, 69, 129);
+body{
+    height: 100%;
+    background-color: $bgCol;
+    background-image: $bgImg;
+    background-repeat: repeat;
+}
+h1{
+    font-family: $font1;
+    color: $bodyTC;
+}
+#indexH{
+    font-size: 3em;
+}
+p{
+    font-family: $font2;
+    color: $bodyTC;
+    font-size: 1.3em;
+}
+a {
+    color: $bodyTC;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: $bodyTC;
+}
+.menu {
+    font-family: $font1;
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menuItem {
+    float: left;
+    display: block;
+    color: $menuTC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+}
+.menuItem:hover {
+    background-color: $hoverC;
+    cursor: pointer;
+}
+.menuItem:visited{
+    color: $menuTC;
+}
+.menuR{
+    float:right;
+}
+.active{
+    background-color: $hoverC;
+}
+.d1{
+    position:absolute;
+    //http://stackoverflow.com/questions/2898221/make-div-fill-remainder-of-page-vertically
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin-top: 13vh;
+    background-color: $hoverC;
+}
+.d2{
+    position:absolute;
+    //http://stackoverflow.com/questions/2898221/make-div-fill-remainder-of-page-vertically
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    text-align: center;
+    margin-top: 1vh;
+}
