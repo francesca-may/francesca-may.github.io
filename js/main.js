@@ -32,6 +32,5 @@ $(document).ready(function () {
 
     $('.jcarousel-next').click(function () {
         $('.jcarousel').jcarousel('scroll', '+=1');
-    });
-    
+    });    
 });
