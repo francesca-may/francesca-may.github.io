@@ -72,6 +72,9 @@ a:visited {
   text-align: center;
   margin-top: 1vh; }
 
+.jcarouselWrap {
+  position: absolute; }
+
 .jcarousel {
   position: relative;
   overflow: hidden;
