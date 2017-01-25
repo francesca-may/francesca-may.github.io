@@ -86,8 +86,8 @@ a:visited{
 .jcarousel{
     position: relative;
     overflow: hidden;
-    width: 854px;
-    height: 480px;
+    width: 600px; //854px;
+    height: 350px;//480px;
 }
 //Container, MUST BE RELATIVE/ABSOLUTE
 .jcarousel ul{
@@ -117,14 +117,14 @@ a:visited{
     line-height: 50px;
 
     position: absolute;
-    top: 50vh;
+    top: 40vh;
     text-align: center;
 }
 .jcarousel-next{
-    right: 19vw; 
+    right: 23vw; 
 }
 .jcarousel-prev{
-    left: 19vw;
+    left: 23vw;
 }
 .jcarousel-next, .jcarousel-prev:hover{
     cursor: pointer;
