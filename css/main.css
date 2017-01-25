@@ -74,7 +74,9 @@ a:visited {
 
 .jcarousel {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 133px;
+  height: 200px; }
 
 .jcarousel ul {
   width: 20000em;
@@ -86,5 +88,30 @@ a:visited {
 
 .jcarousel li {
   float: left; }
+
+.jcarousel-next {
+  font-size: 2em;
+  color: #1d4581;
+  background-color: rgba(29, 69, 129, 0.15);
+  border-radius: 50px;
+  padding: 5px;
+  position: absolute;
+  right: 40vw;
+  top: 30vh;
+  text-align: center; }
+
+.jcarousel-prev {
+  font-size: 2em;
+  color: #1d4581;
+  background-color: rgba(29, 69, 129, 0.15);
+  border-radius: 50px;
+  padding: 5px;
+  position: absolute;
+  left: 40vw;
+  top: 30vh;
+  text-align: center; }
+
+.jcarousel-next, .jcarousel-prev:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

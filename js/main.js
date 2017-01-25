@@ -17,10 +17,21 @@ $(document).ready(function () {
     
     $(function () {
         $('.jcarousel').jcarousel({
-            //Config
-            animation: 'slow',
-            center: true
+        // Configuration goes here
+            center: true,
+            animation: {
+                duration: 400,
+                easing: 'linear',
+            }
         });
+    });
+    
+    $('.jcarousel-prev').click(function () {
+        $('.jcarousel').jcarousel('scroll', '-=1');
+    });
+
+    $('.jcarousel-next').click(function () {
+        $('.jcarousel').jcarousel('scroll', '+=1');
     });
     
 });
