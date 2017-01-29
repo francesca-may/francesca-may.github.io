@@ -1,0 +1,56 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(transparent, #ffcccc); }
+
+body {
+  z-index: -100000; }
+
+.wrapper1 {
+  z-index: 100000;
+  background-image: linear-gradient(transparent, #ffcccc);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center; }
+
+h1 {
+  z-index: 100000;
+  margin-top: 25vh;
+  font-family: "Lilita One", cursive;
+  font-size: 6em;
+  color: #ffe6e6;
+  -webkit-text-stroke: 1px #e70000;
+  text-shadow: 3px 3px 0 #e70000, -1px -1px 0 #e70000, 1px -1px 0 #e70000, -1px 1px 0 #e70000, 1px 1px 0 #e70000; }
+
+p {
+  z-index: 100000;
+  font-family: "Lato", sans-serif;
+  font-size: 3em;
+  color: #ff8080; }
+
+.next {
+  background-color: #ffcccc;
+  font-size: 3em;
+  color: #ff8080;
+  padding-bottom: 1vh;
+  border-style: solid;
+  border-color: #ffcccc;
+  border-width: 3px;
+  width: 30vw;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in; }
+
+.next:hover {
+  cursor: pointer;
+  border-style: solid;
+  border-color: #ff8080;
+  border-width: 3px; }
+
+/*# sourceMappingURL=style.css.map */
