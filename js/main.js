@@ -14,23 +14,4 @@ $(document).ready(function () {
     $("#about").on("click", function () {
         location.assign("about.html");
     });
-    
-    $(function () {
-        $('.jcarousel').jcarousel({
-        // Configuration goes here
-            center: true,
-            animation: {
-                duration: 400,
-                easing: 'linear',
-            }
-        });
-    });
-    
-    $('.jcarousel-prev').click(function () {
-        $('.jcarousel').jcarousel('scroll', '-=1');
-    });
-
-    $('.jcarousel-next').click(function () {
-        $('.jcarousel').jcarousel('scroll', '+=1');
-    });    
 });

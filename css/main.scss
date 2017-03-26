@@ -6,8 +6,127 @@ $font2: 'Rubik' , sans-serif;
 $hoverC: rgba(29, 69, 129, 0.15);
 $menuTC: #fff;
 $bodyTC: rgb(29, 69, 129);
+
+//media q
+//Media Queries - Adapted from http://stackoverflow.com/questions/13550541/media-min-width-max-width
+@media only screen and (min-width:960px){
+        /* styles for browsers larger than 960px;*/
+    .menu{
+        font-size: 200% !important;
+    }
+    .d1{
+        margin-top: 12.5vh !important;
+    }
+    #indexH{
+        font-size: 250% !important;
+    }
+    p{
+        font-size: 130% !important;
+    }
+    .logo{
+        height: 35% !important;
+    }
+    }
+@media only screen and (min-width:1440px){
+    /* styles for browsers larger than 1440px; */
+    .menu{
+        font-size: 300% !important;
+    }
+    .d1{
+        margin-top: 9vh !important;
+    }
+    #indexH{
+        font-size: 450% !important;
+    }
+    p{
+        font-size: 250% !important;
+    }
+    .logo{
+        height: 35% !important;
+    }
+}
+@media only screen and (min-width:2000px){
+        /* for sumo sized (mac) screens */
+    .menu{
+        font-size: 550% !important;
+    }
+    .d1{
+        margin-top: 8vh !important;
+    }
+    #indexH{
+        font-size: 600% !important;
+    }
+    p{
+        font-size: 400% !important;
+    }
+    .logo{
+        height: 36% !important;
+    }
+}
+@media only screen and (max-device-width:480px){
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .d1{
+        margin-top: 6.5vh !important;
+    }
+    .menu{
+        font-size: 300% !important;
+    }
+    p{
+        font-size: 310% !important;
+    }
+    #indexH{
+        font-size: 600% !important;
+    }
+    .logo{
+        height: 35%;
+    }
+}
+@media only screen and (device-width:375px){
+    .d1{
+        margin-top: 8vh !important;
+    }
+    .menu{
+        font-size: 300% !important;
+    }
+    p{
+        font-size: 310% !important;
+    }
+    #indexH{
+        font-size: 600% !important;
+    }
+    .logo{
+        height: 35%;
+    }
+}
+@media only screen and (device-width:425px){
+    .d1{
+        margin-top: 8.5vh !important;
+    }
+}
+@media only screen and (device-width:768px){
+    /* default iPad screens */
+    .d1{
+        margin-top: 11vh !important;
+    }
+    .menu{
+        font-size: 300% !important;
+    }
+    p{
+        font-size: 210% !important;
+    }
+    #indexH{
+        font-size: 400% !important;
+    }
+    .logo{
+        height: 30%;
+    }
+    }
+
+
+
 body{
     height: 100%;
+    font-size: 100%;
     background-color: $bgCol;
     background-image: $bgImg;
     background-repeat: repeat;
@@ -17,12 +136,12 @@ h1{
     color: $bodyTC;
 }
 #indexH{
-    font-size: 3em;
+    font-size: 300%;
 }
 p{
     font-family: $font2;
     color: $bodyTC;
-    font-size: 1.3em;
+    font-size: 130%;
 }
 a {
     color: $bodyTC;
@@ -34,7 +153,7 @@ a:visited{
 }
 .menu {
     font-family: $font1;
-    font-size: 1.5em;
+    font-size: 160%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -81,51 +200,4 @@ a:visited{
     right:0;
     text-align: center;
     margin-top: 1vh;
-}
-//visible area, MUST BE RELATIVE
-.jcarousel{
-    position: relative;
-    overflow: hidden;
-    width: 600px; //854px;
-    height: 350px;//480px;
-}
-//Container, MUST BE RELATIVE/ABSOLUTE
-.jcarousel ul{
-    width: 20000em;
-    position: relative;
-    
-    /* Optional, required here as it's ul */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-//item elements works best w/ fixed height
-.jcarousel li{
-    //Required for block elements like lis
-    float: left;
-}
-.jcarousel-next,.jcarousel-prev{
-    font-size: 2em;
-    color: $bodyTC;
-    background-color: $hoverC;
-    border-radius: 50px;
-    padding: 4px;
-    
-    //http://stackoverflow.com/questions/21717149/perfect-circle-in-css-with-border-radius-doesnt-work
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-
-    position: absolute;
-    top: 40vh;
-    text-align: center;
-}
-.jcarousel-next{
-    right: 23vw; 
-}
-.jcarousel-prev{
-    left: 23vw;
-}
-.jcarousel-next, .jcarousel-prev:hover{
-    cursor: pointer;
 }
