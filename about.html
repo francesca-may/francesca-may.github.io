@@ -1,34 +1,58 @@
 <!DOCTYPE html>
-<html>
+<!-- Define language as English -->
+<html lang="en">
     <head>
-        <link rel="icon" href="media/favicon.png" type="icon">
-        <title>francesca-may</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/main.css" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/main.js" type="text/javascript"></script>
+        <!-- Text Encoding -->
+        <meta charset="utf-8" />
+        <!-- Site Description -->
+        <meta name="description" content="Francesca Ellis' Portfolio Site" />
+        <link rel="icon" href="images/favicon.gif" type="ico"/>
+        <!-- Site Title -->
+        <title>Portfolio</title>
+        <!-- Normalize.css -->
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
     </head>
-<body>
-    <div>
-        <ul class="menu">
-            <li class="menuItem" id="home">Home</li>
-            <li class="menuItem menuR" id="contact">Contact</li>
-            <li class="menuItem menuR" id="projects">Projects</li>
-            <li class="menuItem menuR active" id="about">About</li>
-        </ul>
-    </div>
-    <div class="d1">
-        <div class="d2">
-            <h1 id="indexH">Want to know more about me?</h1>
-            <img class="logo" src="media/fran_01.png">
-            <p>My name is <b>Francesca</b>, I am a <b>Computing BSc(Hons)</b> student from North Wales, studying in England.
-                <br /><br />
-                I am most proficient in <b>HTML5, CSS3 and JavaScript</b>; though I do have experience in PHP, MySQL and C#.
-                <br /><br />
-                I can speak <b>French</b> and am a beginner in <b>Japanese</b>!
-                <br /><br />
-                In my spare time, I enjoy being creative; and particularly enjoy <b>pixel art</b> as well as traditional drawing! </p>
+    <body>
+        <header class="container clearfix menu">
+            <nav>
+                <a href="index.html"><img id="logo" src="images/logo.png" alt="logo" /></a>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main1">
+            <h2>About Me</h2>
+            <h3 class="tag"><strong>Hi there! My name is Francesca, but I commonly go as ‘Fran’!</strong></h3>
+            <h3 class="text">I am from the UK, but during my highschool life I have lived in Doha, Qatar and Dubai, UAE.<br />
+                I moved back to the UK to persue a degree in Computing BSc (Hons) in 2014 where I found
+                my true passion for  Web Design and Development, as well as Graphic Design. I have always
+                been creative, so when I made my first ‘proper’ website in the first year of my course, I was extremely excited to get stuck in and make cool things!</h3>
         </div>
-    </div>
-</body>
+        <div id="main2">
+            <h2>My Skills</h2>
+            <h3 class="tag"><strong>I am most confident with font-end skills such as HTML5, CSS3, SASS &amp; jQuery.</strong></h3>
+            <h3 class="text">I have experience with back-end skills such as PHP, PDO &amp; MySQL, though I may need a little encouragement or training depending on the project. I have experience with Adobe CC; namely photoshop, premiere pro and dreamweaver. I have little experience with ilustrator, though I do have experience with inkscape which is based on the same functionalities.</h3>
+        </div>
+        <footer class="container clearfix menu">
+            <div id="deets" class="container clearfix">
+                <p id="question">Got a project in mind? Get in touch!</p>
+                <p id="contact">eMail me: <a href="mailto:francesca.may@hotmail.co.uk">francesca.may@hotmail.co.uk</a></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
 </html>

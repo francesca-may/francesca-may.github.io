@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.page nav a {
+    background-color: none;
+    background-image: url(../images/ie_transparency_normal.png);
+}
+.page nav a:hover {
+    background-color: none;
+    background-image: url(../images/ie_transparency_over.png);
+}

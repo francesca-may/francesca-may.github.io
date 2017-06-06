@@ -1,17 +1,9 @@
-var $;
-
-$(document).ready(function () {
-    'use strict';
-    $("#home").on("click", function () {
-        location.assign("index.html");
+  $(document).ready(function() {
+    $('#slideshow').coinslider({
+        height: 500,
+        effect: 'straight', 
+        delay: 4000,
+        spw: 1,
+        sph: 1
     });
-    $("#contact").on("click", function () {
-        location.assign("contact.html");
-    });
-    $("#projects").on("click", function () {
-        location.assign("projects.html");
-    });
-    $("#about").on("click", function () {
-        location.assign("about.html");
-    });
-});
+  });
