@@ -1,53 +1,184 @@
 <!DOCTYPE html>
-<!-- Define language as English -->
 <html lang="en">
-    <head>
-        <!-- Text Encoding -->
-        <meta charset="utf-8" />
-        <!-- Site Description -->
-        <meta name="description" content="Francesca Ellis' Portfolio Site" />
-        <link rel="icon" href="images/favicon.gif" type="ico"/>
-        <!-- Site Title -->
-        <title>Portfolio</title>
-        <!-- TYPED -->
-        <script src="js/typed.js" type="text/javascript"></script>
-        <script src="js/frontType.js" type="text/javascript"></script>
-        <!-- Normalize.css -->
-        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-        <!-- Custom Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    </head>
-    <body>
-        <header class="container clearfix menu">
-            <nav>
-                <a href="index.html"><img id="logo" src="images/logo.png" alt="logo" /></a>
-                <ul>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="main">
-            <h1>HELLO</h1>
-            <h2>I'm Francesca</h2>
-            <h3>I'm interested in <span id="interest">web development</span></h3>
-        </div>
-        <footer class="container clearfix menu">
-             <div id="deets" class="container clearfix">
-                <p id="question">Got a project in mind? Get in touch!</p>
-                <p id="contact">My Github: <a href="https://github.com/francesca-may">github.com/francesca-may</a></p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="media/favicon.png" type="ico"/>
+    <title>Francesca Ellis | WEB DEVELOPER</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css"/>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"/>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <object id="logo" data="media/logo.svg" type="image/svg+xml">
+                    <!-- BACKUP -->
+                    <img src="media/favicon.png" alt="logo"/>
+                    </object>
+                </div> <!-- END COL -->
+                <div class="col-sm-6">
+                    <nav>
+                        <ul class="menu">
+                            <a href="#about"><li><i class="fa fa-question"></i> About</li></a>
+                            <a href="#projects"><li><i class="fa fa-edit"></i> Projects</li></a>
+                            <a href="#contact"><li><i class="fa fa-envelope"></i> Contact</li></a>
+                        </ul><!-- END MENU -->
+                    </nav> <!-- END NAV -->
+                </div><!-- END COL -->
+            </div><!-- END ROW -->
+        </div><!-- END CONTAINER -->
+    </header><!-- HEADER -->
+
+    <!-- MAIN CONTENT -->
+
+    <!-- WELCOME SECTION? -->
+    <section id="welcome">
+        <div class="container">
+            <h1>Hello</h1>
+            <h2>I'm Francesca Ellis, a  <span id="interest"> web designer </span> </h2>
+        </div><!-- END CONTAINER -->
+    </section><!-- END WELCOME -->
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-3">
+                    <p class="lead"><i class="fa fa-html5"></i> HTML5</p>
+                    <p class="lead"><i class="fa fa-css3"></i> CSS3</p>
+                    <p class="lead"><i class="fa fa-code"></i> JavaScript</p>
+                </div><!-- END COL -->
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-3">
+                    <p class="lead"><i class="fa fa-paint-brush"></i> Photoshop</p>
+                    <p class="lead"><i class="fa fa-object-group"></i> Inkscape</p>
+                    <p class="lead"><i class="fa fa-coffee"></i> Tea Drinker</p>
+                </div><!-- END COL -->
+                <div class="col-sm-3">
+                </div>
+            </div><!-- END ROW -->
+        </div> <!-- END CONTAINER -->
+    </section> <!-- END SKILLS SEC -->
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p class="lead">Hi there! My name is Francesca, but I commonly go as &lsquo;Fran&rsquo;!</p>
+            <p class="content"><strong>I am an upper second class (2:1) Computing(BSc) graduate with over 5 years of web development experience</strong>.</p>
+                <p class="content">I have technical skills in <strong>HTML5, CSS3, SASS, JavaScript</strong> &amp; relevant frameworks
+                &amp; libraries, such as <strong>Bootstrap or jQuery</strong>.</p>
+                <p class="content">I am also adept at creating graphics such as logos and posters using <strong>Photoshop and Inkscape</strong>.</p>
+                <p class="content">I have experience with back-end skills such as <strong>PHP, PDO &amp; MySQL</strong> and have a good understanding of
+                <strong>WordPress as a CMS</strong>.</p>
+        </div><!-- END CONTAINER -->
+    </section><!-- END ABOUT -->
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <h1>Projects</h1>
+            <p class="lead">Here are a few of the projects I've worked on!</p>
+            <h1 class="soon"><i class="fa  fa-hourglass-half "></i> Coming Soon! <i class="fa  fa-hourglass-half "></i></h1>
+        </div><!-- END CONTAINER -->
+    </section><!-- END PROJECTS -->
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <form id="contactForm" method="POST" action="https://formspree.io/francesca.may@hotmail.co.uk">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input class="form-control" type="text" placeholder="Please enter your name" id="name" name="name">
+                        </div>
+                    </div><!-- END COL -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Please enter your email">
+                        </div>
+                    </div><!-- END COL -->
+                </div><!-- END ROW -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input class="form-control" type="text" placeholder="Please enter the subject" name="subject" id="subject">
+                        </div>
+                    </div><!-- END COL -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="reason">Reason</label>
+                            <select class="form-control" id="reason" name="reason">
+                                <option>Reason for contact</option>
+                                <option>I want to hire you!</option>
+                                <option>General enquiry/other</option>
+                            </select>
+                        </div>
+                    </div><!-- END COL -->
+                </div><!-- END ROW -->
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label id="messageLabel" for="message">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                        </div>
+                    </div><!-- END COL -->
+                </div><!-- END ROW -->
+                <div class="buttonWrap">
+                    <button id="submit" type="submit" class="form-group"><i class="fa fa-send"></i> Submit</button>
+                </div><!-- END BUTTON WRAP -->
+            </form><!-- END FORM -->
+        </div><!-- END CONTAINER -->
+    </section><!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="container">
+                        <a href="https://github.com/francesca-may" class="social" target="_blank"><p class="lead"><i class="fa fa-github"></i> Github</p></a>
+                        <a href="https://linkedin.com/in/francescamayellis" class="social" target="_blank"><p class="lead"><i class="fa fa-linkedin"></i> LinkedIn</p></a>
+                    </div><!-- END COONTAINER -->
+                </div> <!-- END COL -->
+                <div class="col-sm-8">
+                    <nav>
+                        <ul class="menu">
+                            <a href="#header"><li><i class="fa fa-angle-up"></i> Top</li></a>
+                            <a href="#about"><li><i class="fa fa-question"></i> About</li></a>
+                            <a href="#projects"><li><i class="fa fa-edit"></i> Projects</li></a>
+                            <a href="#contact"><li><i class="fa fa-envelope"></i> Contact</li></a>
+                        </ul><!-- END MENU -->
+                    </nav> <!-- END NAV -->
+                </div><!-- END COL -->
+            </div><!-- END ROW -->
+        </div><!-- END CONTAINER -->
+    </footer><!-- END FOOTER -->
+    <!-- JQUERY -->
+    <script src="libs/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <!-- BOOTSTRAP -->
+    <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- CUSTOM JS -->
+    <script src="js/main.js" type="text/javascript"></script>
+    <!-- TYPEDJS -->
+    <script src="js/typed.js" type="text/javascript"></script>
+    <!-- CUSTOM TYPED JS -->
+    <script src="js/frontType.js" type="text/javascript"></script>
+</body>
 </html>

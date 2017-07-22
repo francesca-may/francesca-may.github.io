@@ -1,301 +1,209 @@
+/* GENERAL */
 * {
     margin: 0px;
     padding: 0px;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
-body {
-    background-color: #f0eee9;
-    background-image: url(../images/brilliant.png);
+html, body {
+    background: url(../media/brilliant.png) #f0eee9;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    color: #f0eee9;
-}
-a {
-    color: #f0eee9;
-    text-decoration: none;
-}
-#logo {
-    float: left;
-    margin-left: 230px;
-    width: 156px;
-    height: 67px;
-}
-#logo:hover {
-    -webkit-box-shadow: 0px 0px 15px rgba(255,255,255,1);
-       -moz-box-shadow: 0px 0px 15px rgba(255,255,255,1);
-            box-shadow: 0px 0px 15px rgba(255,255,255,1);
-    cursor: pointer;
-}
-#logo:active {
-    position: relative;
-    top: 3px;
-    cursor: pointer;
-}
-header, footer {
-    background-color: #bd9bc0;
-    background-image: url(../images/beige-paper.png);
-    padding: 25px 0;
-}
-header.menu, footer.menu {
-    width: 100%;
-}
-header nav ul {
-    position: absolute;
-    top: 61px;
-    right: 220px;
-}
-header nav ul li, footer nav ul li {
-    display: inline-block;
-}
-header nav ul li a:link {
-    font-size: 24px;
-    color: #f0eee9;
-    padding-right: 21px;
-}
-header nav ul li a:visited, footer nav ul li a:visited {
-    color: #f0eee9;
-    text-decoration: none;
-}
-header nav ul li a:active, footer nav ul li a:active {
-    position: relative;
-    top: 1px;
-}
-header nav ul li a:hover {
-    -webkit-text-shadow: 0px 0px 15px rgba(255,255,255,.5);
-       -moz-text-shadow: 0px 0px 15px rgba(255,255,255,.5);
-            text-shadow: 0px 0px 15px rgba(255,255,255,.5);
-}
-footer nav {
-    margin-top: 10px;
-}
-footer nav ul li a:link {
-    font-size: 18px;
-    color: #f0eee9;
-    padding-right: 6px;
-}
-footer nav ul li a:hover {
-    border-bottom: #f0eee9 solid 1px;
-}
-#main, #main3 {
-    height: 409px;
-    width: 940px;
-    background-color: #91a7d0;
-    background-image: url(../images/binding-light.png);
-    background-blend-mode: color-burn;
-    margin: 13px auto 13px;
-    line-height: 1em;
-    padding-top: 20px;
-}
-#main, #main4 {
-    text-align: center;
-}
-#main1, #main2 {
-    height: 230px;
-    width: 940px;
-    background-color: #91a7d0;
-    background-image: url(../images/binding-light.png);
-    background-blend-mode: color-burn;
-    margin: 13px auto 13px;
-    text-align: justify;
-    line-height: 1em;
-    padding-top: 20px;
-}
-#main3 {
-    width: 940px;
-    text-align: justify;
-}
-#main3 h3#tag1, #main3 h3#tag2 {
-    padding-left: 108px;    
-    position: absolute;
-}
-#main3 h3#tag1 {
-    padding-bottom: 100px;
-    width: 746px;
-    top: 20%;
-}
-#main3 h3#tag2 {
-    font-size: 18px;
-    font-weight: 100;
-    line-height: normal;
-    width: 746px;
-    top: 29.5%;
-}
-#main4 {
-    width: 940px;
-    height: 100%;
-    background-color: #91a7d0;
-    background-image: url(../images/binding-light.png);
-    background-blend-mode: color-burn;
-    margin: 13px auto 13px;
-    line-height: 1em;
-    padding-top: 20px;
-}
-#main4 p.text {
-    font-size: 18px;
-    padding-bottom: 10px;
-}
-#emailtop {
-    display: inline;
-}
-#main1 h2, #main2 h2 {
-    padding: 16px 0px 0px 16px;
-}
-#main1 h3, #main2 h3 {
-    width: 903px;
-    margin-top: 5px;
-    padding-left: 16px;
-    font-size: 20px;
-    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 h1 {
-    padding-top: 85px;
-    font-size: 60px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
-h2 {
-    font-size: 48px;
-}
-h3 {
-    font-size: 36px;
-    line-height: 2.5em;
-}
-.container {
-    width: 940px;
-    text-align: center;
-    margin: 0 auto;
-}
-#question {
-    font-size: 18px;
-}
-#contact {
-    font-size: 16px;
-    margin-top: 2px;
-}
-#deets {
-    float: left;
-    width: 352px;
-    margin-left: 200px;
-}
-#contact:hover {
-    text-decoration: underline;
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.text {
-    font-weight: 400;
-}
-.tag {
-    padding-top: 20px;
-}
-#envelope {
-    width: 79px;
-    height: 59px;
-    position: absolute;
-    z-index: 4;
-    padding: 22px 0px 0px 20px;
-}
-form#contactMe {
-    position: absolute;
-    top: 232px;
-    left: 320px;
-}
-input#email, select#reason {
-    margin-left: 34px;
-}
-input, textarea, select {
-    width: 336px;
-    height: 30px;
-    margin-top: 13px;
-    background: none;
-    border: solid 1px #f0eee9;
+button {
+    padding: 1em 2em;
+    background: #7c96c7;
     color: #f0eee9;
-    padding: 2px 0px;
-}
-input {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    padding-left: 13px;
-}
-textarea {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    padding-left: 13px;    
-}
-input::placeholder, textarea::placeholder, select::placeholder {
-    color: #f0eee9;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-}
-select {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    padding-left: 13px;
-}
-option {
-    font-family: 'Montserrat', sans-serif;
-    color: #f0eee9;
-    background-color: #91a7d0;
-}
-option:focus, select:focus {
-    outline: 0;
-}
-textarea#message {
-    width: 714px;
-    height: 135px;
-    text-align: justify;
-    padding-top: 13px;
-}
-#sub {
-    display: block;
-    width: 200px;
-    height: 50px;
-    margin: 6px auto 0;
-    background: none;
-    border: solid 1px #f0eee9;
-    color: #f0eee9;
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    border: none;
+    transition: all .2s ease-in;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
 }
-#sub:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 10px rgba(255,255,255, 1);
+button:hover {    
+    background-color: #B2C1DE;
+}
+::selection {
+    background: #ee76aa;
+    color:  #f0eee9;
+}
+::-moz-selection {
+    background: #ee76aa;
+    color:  #f0eee9;
+}
+/* LAYOUT */
+header, footer {
+    width: 100%;
+    background: url(../media/beige-paper.png) #bd9bc0;
+    color: #f0eee9;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+}
+footer {
     position: relative;
-    top: -1px;
+    left:0px;
+    bottom:0px;
+    padding: 0 0 10px 0;
 }
-#sub:active {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#welcome, #skills, #about, #projects, #contact {
+    cursor: default;
+}
+nav ul.menu { margin-top: 20px; }
+nav ul.menu a{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: #f0eee9;
+    font-size: 1.7em;
+    padding-right: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+a.social {
+    display: inline-block;
     position: relative;
-    top: 1px;
-    box-shadow: 0px 0px 10px rgba(255,255,255, 1);
+    top: 20px;
+    padding-right: 1em;
+    text-decoration: none;
+    color: #f0eee9;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;   
 }
-#sub:focus {
-    outline: 0;
-}
-h4 {
+a.social:hover { top: 18px; }
+nav ul.menu a:hover { position: relative; top: -2px; }
+#welcome {
     text-align: center;
-    color: #91a7d0;
-    padding-bottom: 13px;
-    font-size: 18px;
+    padding: 0 0 10px 0;
+    color: #7c96c7;
 }
-#github a:link {
-    color: #91a7d0;
-    border-bottom: solid 1px #91a7d0;
+#welcome h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4em;
 }
-#github a:visited {
-    color: #91a7d0;
-    border-bottom: solid 1px #91a7d0;
+#skills {
+    padding-top: 20px;
+    width: 100%;
+    background: url(../media/binding-light.png) #91a7d0;
+    background-blend-mode: color-burn;
+    color: #f0eee9;
+    height: 100%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
 }
-#github a:hover {
-    position: relative;
-    top: -2px;
+#skills p {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: default;
 }
-#github a:active {
-    position: relative;
-    top: 1px;
+#about, #contact {
+    padding: 0 0 10px 0;
+    color: #7c96c7;
+    text-align: justify;
 }
-#slideshow {
-    margin: 0 auto;
+#about h1, #projects h1, #contact h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+#about .content {
+    font-size: 1.3em;
+}
+#about p.lead {
+    margin-bottom: .5em;
+}
+#projects {
+    padding-bottom: 20px;
+    width: 100%;
+    background: url(../media/binding-light.png) #bd9bc0;;
+    background-blend-mode: color-burn;
+    color: #f0eee9;
+    height: 100%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
+}
+#projects .container h1.soon {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+/* FORM */
+.buttonWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#messageLabel, #message{
+    margin-left: 1em;
+}
+#message {
+    width: 81.5em;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width : 480px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header #logo {
+        margin-left: 40px;
+        height: 90px;
+    }
+    header nav {
+        text-align: center;
+    }
+    #welcome h1 {
+        font-size: 3em;
+    }
+     #welcome h2 {
+        font-size: 1.6em;
+        font-weight: bold
+    }
+    #skills{
+        text-align: center;
+    }
+    #message {
+        width: 28.3em;
+    }
+    footer {
+        text-align: center;
+    }
+    nav ul.menu a {
+        display: block;
+        border-bottom: 1px solid #f0eee9;
+        padding: .5em;
+    }    
 }

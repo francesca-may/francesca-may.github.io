@@ -1,10 +1,9 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     'use strict';
     Typed.new('#interest', {
-        strings: ["Web Design", "Web Development", "UI/UX", "Graphic Design"],
+        strings: ["web designer", "web developer", "graphic designer", "dog lover"],
         typeSpeed: 100,
-        backDelay: 2000,
+        backDelay: 1000,
         loop: true
     });
 });
