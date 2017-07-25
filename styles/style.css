@@ -176,6 +176,15 @@ nav ul.menu a:hover { position: relative; top: -2px; }
     margin: 0 auto;
     height: 400px;
 }
+.carousel-caption {
+    background-color: rgba(255,255,255,.5);
+}
+.carousel-caption h1 {
+    color: #ee76aa;
+}
+.carousel-caption p {
+    color: #7c96c7;
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width : 480px) {
     header {
