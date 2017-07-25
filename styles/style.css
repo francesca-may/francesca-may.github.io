@@ -171,6 +171,11 @@ nav ul.menu a:hover { position: relative; top: -2px; }
 #message {
     width: 81.5em;
 }
+/* CAROUSEL */
+#carousel img {
+    margin: 0 auto;
+    height: 400px;
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width : 480px) {
     header {
