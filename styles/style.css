@@ -183,7 +183,11 @@ nav ul.menu a:hover { position: relative; top: -2px; }
     color: #ee76aa;
 }
 .carousel-caption p {
-    color: #7c96c7;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #bd9bc0;
+    text-shadow: none;
+    background: #fff;
 }
 /* MEDIA QUERIES */
 @media only screen and (max-width : 480px) {
