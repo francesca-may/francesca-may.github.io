@@ -223,5 +223,12 @@ nav ul.menu a:hover { position: relative; top: -2px; }
         display: block;
         border-bottom: 1px solid #f0eee9;
         padding: .5em;
-    }    
+    }
+    #carousel img {
+        height: auto;
+        width: auto;
+    }
+    #carousel h1 {
+        font-size: .5em;
+    }
 }
