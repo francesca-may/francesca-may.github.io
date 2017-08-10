@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header id="header">
+    <header role="banner" id="header">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -104,42 +104,48 @@
                 <!-- SLIDE WRAPPER -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href="http://r-ggraham.github.io/index.html" target="_blank" title="Go to Rob Graham's Portfolio"><img src="media/eg1.png" alt="Rob Graham Porfolio">
+                        <a href="http://r-ggraham.github.io/index.html" target="_blank" title="Go to Rob Graham's Portfolio">
+                            <img role="presentation" src="media/eg1.png" alt="Rob Graham Porfolio">
                         <div class="carousel-caption">
                         <h1>Portfolio for game developer Rob Graham</h1>
                         <p>HTML5, CSS3, Bootstrap and JavaScript</p>
                         </div></a><!-- END CAPTION -->
                     </div>
                     <div class="item">
-                        <a href="https://github.com/francesca-may/LangMate" target="_blank" title="Go to the GitHub Repository"><img src="media/eg2.png" alt="LangMate, a third year project">
+                        <a href="https://github.com/francesca-may/LangMate" target="_blank" title="Go to the GitHub Repository">
+                            <img role="presentation" src="media/eg2.png" alt="LangMate, a third year project">
                         <div class="carousel-caption">
                         <h1>Third year web applications project</h1>
                         <p>HTML5, CSS3, JavaScript, PHP, PDO, MySQL</p>
                         </div></a><!-- END CAPTION -->
                     </div>
                     <div class="item">
-                        <a href="https://github.com/francesca-may/ToDo-Web-Application" target="_blank" title="Go to the Github Repository"><img src="media/eg3.png" alt="A Simple 'To Do' List">
+                        <a href="https://github.com/francesca-may/ToDo-Web-Application" target="_blank" title="Go to the Github Repository">
+                            <img role="presentation" src="media/eg3.png" alt="A Simple 'To Do' List">
                         <div class="carousel-caption">
                         <h1>Simple 'To Do' list application</h1>
                         <p>HTML5, CSS3, JavaScript, PHP, PDO, MySQL</p>
                         </div></a><!-- END CAPTION -->
                     </div>
                     <div class="item">
-                        <a href="https://github.com/francesca-may/doughnutShoppe" target="_blank" title="Go to the Github Repository"><img src="media/eg4.png" alt="A Website for a Doughnut Shoppe">
+                        <a  href="https://github.com/francesca-may/doughnutShoppe" target="_blank" title="Go to the Github Repository">
+                            <img role="presentation" src="media/eg4.png" alt="A Website for a Doughnut Shoppe">
                         <div class="carousel-caption">
                         <h1>Fictional business homepage</h1>
                         <p>HTML5, CSS3, JavaScript</p>
                         </div></a><!-- END CAPTION -->
                     </div>
                     <div class="item">
-                        <a href="https://github.com/francesca-may/blueBanner" target="_blank" title="Go to the Github Repository"><img src="media/eg5.png" alt="A simple website">
+                        <a href="https://github.com/francesca-may/blueBanner" target="_blank" title="Go to the Github Repository">
+                            <img role="presentation" src="media/eg5.png" alt="A simple website">
                         <div class="carousel-caption">
                         <h1>Fictional business homepage</h1>
                         <p>HTML5, CSS3</p>
                         </div></a><!-- END CAPTION -->
                     </div>
                     <div class="item">
-                        <a href="https://github.com/francesca-may/css3Orbit" target="_blank" title="Go to the Github Repository"><img src="media/eg6.png" alt="A Simple CSS3 Animation">
+                        <a href="https://github.com/francesca-may/css3Orbit" target="_blank" title="Go to the Github Repository">
+                            <img role="presentation" src="media/eg6.png" alt="A Simple CSS3 Animation">
                         <div class="carousel-caption">
                         <h1>Simple CSS3 animation</h1>
                         <p>HTML5, CSS3</p>
@@ -148,12 +154,12 @@
                 </div>
                 <!-- NAVIGATION CONTROLS -->
                 <a class="left carousel-control" href="#carousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
+                    <span role="button" aria-label="Previous Slide" class="glyphicon glyphicon-chevron-left"></span>
+                    <span role="button" aria-labelledby="Previous Slide" class="sr-only">Previous</span>
                 </a>
                 <a class="right carousel-control" href="#carousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
+                    <span role="button" aria-label="Next Slide" class="glyphicon glyphicon-chevron-right"></span>
+                    <span role="button" aria-labelledby="Next Slide" class="sr-only">Next</span>
                 </a>
             </div><!-- END CAROUSEL -->
         </div><!-- END CONTAINER -->
@@ -189,9 +195,9 @@
                         <div class="form-group">
                             <label for="reason">Reason</label>
                             <select class="form-control" id="reason" name="reason">
-                                <option>Reason for contact</option>
-                                <option>I want to hire you!</option>
-                                <option>General enquiry/other</option>
+                                <option role="option">Reason for contact</option>
+                                <option role="option">I want to hire you!</option>
+                                <option role="option">General enquiry/other</option>
                             </select>
                         </div>
                     </div><!-- END COL -->
@@ -205,7 +211,7 @@
                     </div><!-- END COL -->
                 </div><!-- END ROW -->
                 <div class="buttonWrap">
-                    <button id="submit" type="submit" class="form-group"><i class="fa fa-send"></i> Submit</button>
+                    <button role="link" aria-labelledby="Submit Form Button" id="submit" type="submit" class="form-group"><i class="fa fa-send"></i> Submit</button>
                 </div><!-- END BUTTON WRAP -->
             </form><!-- END FORM -->
         </div><!-- END CONTAINER -->
