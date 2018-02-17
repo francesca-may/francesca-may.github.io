@@ -1,254 +1,381 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" href="media/favicon.png" type="ico"/>
-    <title>Francesca Ellis | WEB DEVELOPER</title>
-    <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css"/>
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"/>
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/media/favicon.ico" type="image/x-icon">
+    <!-- jQuery JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+    <!-- FontAwesome Style -->
+    <link rel="stylesheet" href="assets/css/fontAwesome/css/fontawesome-all.min.css" type="text/css" />
+    <!-- AOS for scroll -->
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <script src="assets/js/aos.js"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Francesca Ellis | Portfolio</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header role="banner" id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <object id="logo" data="media/logo.svg" type="image/svg+xml">
-                    <!-- BACKUP -->
-                    <img src="media/favicon.png" alt="logo image"/>
-                    </object>
-                </div> <!-- END COL -->
-                <div class="col-sm-6">
-                    <nav>
-                        <ul class="menu">
-                            <a href="#about"><li><i class="fa fa-question"></i> About</li></a>
-                            <a href="#projects"><li><i class="fa fa-edit"></i> Projects</li></a>
-                            <a href="#contact"><li><i class="fa fa-envelope"></i> Contact</li></a>
-                        </ul><!-- END MENU -->
-                    </nav> <!-- END NAV -->
-                </div><!-- END COL -->
-            </div><!-- END ROW -->
-        </div><!-- END CONTAINER -->
-    </header><!-- HEADER -->
+    <script>AOS.init();</script>
+    <!-- Header -->
+    <header class="sticky-top">
+        <div class="d-none d-lg-block d-xl-block">
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="#hero">Home</a>
+                <a class="nav-link" href="#work" title="Cool projects I've worked on!">Work</a>
+                <a class="nav-link" href="#about" title="Learn more about me!">About</a>
+                <a class="nav-link" href="#contact" title="Get in touch!">Contact</a>
+                <a class="nav-link" href="https://github.com/francesca-may" target="_blank" title="More at my GitHub"><i class="fab fa-github"></i></a>
+                <a class="nav-link" href="https://linkedin.com/in/francescamayellis" target="_blank" title="More at my LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </nav>
+        </div>
 
-    <!-- MAIN CONTENT -->
-
-    <!-- WELCOME SECTION -->
-    <section id="welcome">
-        <div class="container">
-            <h1>Hello</h1>
-            <h2>I'm Francesca Ellis, a  <span id="interest"> web designer </span> </h2>
-        </div><!-- END CONTAINER -->
-    </section><!-- END WELCOME -->
-
-    <!-- SKILLS -->
-    <section id="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
+        <div class="mobNavWrap d-block d-lg-none">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobNav" aria-controls="mobNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                </button>                
+                <a class="nav-link" href="https://github.com/francesca-may" target="_blank" title="More at my GitHub"><i class="fab fa-github"></i></a>
+                <a class="nav-link" href="https://linkedin.com/in/francescamayellis" target="_blank" title="More at my LinkedIn"><i class="fab fa-linkedin"></i></a>
+                
+                <div class="collapse navbar-collapse" id="mobNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work" title="Cool projects I've worked on!">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" title="Learn more about me!">About</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#contact" title="Get in touch!">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-3">
-                    <p class="lead"><i class="fa fa-html5"></i> HTML5</p>
-                    <p class="lead"><i class="fa fa-css3"></i> CSS3</p>
-                    <p class="lead"><i class="fa fa-code"></i> JavaScript</p>
-                </div><!-- END COL -->
-                <div class="col-sm-1">
-                </div>
-                <div class="col-sm-3">
-                    <p class="lead"><i class="fa fa-paint-brush"></i> Photoshop</p>
-                    <p class="lead"><i class="fa fa-object-group"></i> Inkscape</p>
-                    <p class="lead"><i class="fa fa-coffee"></i> Tea Drinker</p>
-                </div><!-- END COL -->
-                <div class="col-sm-3">
-                </div>
-            </div><!-- END ROW -->
-        </div> <!-- END CONTAINER -->
-    </section> <!-- END SKILLS SEC -->
+            </nav>
+        </div>
 
-    <!-- ABOUT -->
+
+    </header>
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-xs-12 col-md-12">
+                    <h1>Hello, I'm Francesca</h1>
+                    <h3>and I can make your website concept a reality</h3>
+                    <a id="hireMe" href="#contact" title="Get in touch!" class="btn-primary btn">I'm available for hire</a>
+                    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                    <script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#0277BD', 'R5R48GY9');kofiwidget2.draw();</script> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work -->
+    <section id="work">
+        <div class="row no-gutters">
+            <div class="col xs-12 col-md-12">
+                <div class="container">
+                    <h2>Work</h2>
+                    <p class="lead">Here are some cool projects I've had the privilege to work on. <span class="small text-muted">Clicking on a project will open it up in an alternative tab.</span></p>
+                    
+                    <!-- Examples in rows -->
+                    <div id="examples" class="d-none d-lg-block d-xl-block">
+
+                        <div class="row proj" data-aos="fade-right">
+                            <div class="col-md-6 proj">
+                                <a href="https://www.strichards.org.uk/build2020/" target="_blank" title="Build 2020 WordPress website"><img src="assets/media/build2020.jpg" alt="Build 2020 WordPress website" width="100%" /></a>
+                            </div>
+                            <div class="col-md-6 proj behind">
+                                <h5>Build2020</h5>
+                                <p class="sum">Project: Bespoke WordPress Site</p>
+                                <p>After being provided a design, I drafted this site in HTML &amp; CSS using Bootstrap. I then adapted the draft into a compatible
+                                WordPress template. This site also uses WordPress plugins like advanced custom fields for client convenience, making it simple and fast
+                                for them to maintain their own sections. I also learned how to create custom posts, to make it easier for the client to post
+                                both blog posts and patient stories separately.</p>
+                            </div>
+                        </div>
+                        <div class="row proj" data-aos="fade-left">
+                            <div class="col-md-6 proj">
+                                <h5>Mortimer Childe</h5>
+                                <p class="sum">Project: Bespoke WordPress Site</p>
+                                <p>This site was first drafted in HTML &amp; CSS using Bootstrap, based on a design given to me, and was then converted
+                                into WordPress templates. This site also uses WordPress plugins such as gravity forms (to make user - client communication easy)
+                                and advanced custom fields (for convenient client editable sections).</p>
+                            </div>
+                            <div class="col-md-6 proj">
+                                <a href="https://www.mortimerchilde.co.uk" target="_blank" title="Mortimer Childe WordPress website"><img src="assets/media/mortimer.jpg" alt="Mortimer Childe WordPress website" width="100%" /></a>
+                            </div>
+                        </div>
+                        <div class="row proj" data-aos="fade-right">
+                            <div class="col-md-6 proj">
+                                <a href="https://www.justaskecs.com" target="_blank" title="Energy Connection Services WordPress website"><img src="assets/media/ecs.jpg" alt="Energy Connection Services WordPress website" width="100%" /></a>
+                            </div>
+                            <div class="col-md-6 proj behind">
+                                <h5>Energy Connection Services</h5>
+                                <p class="sum">Project: Mobile Friendly Services Grid</p>
+                                <p>Showing eight services on a mobile version of the site felt excessive to the client and therefore it was my job
+                                to make this easier on the eye and more practical. I used Bootstrap columns to create a more responsive and accessible
+                                version of the grid; making sure that four key services were visible.</p>
+                            </div>
+                        </div>
+                        <div class="row proj" data-aos="fade-left">
+                            <div class="col-md-6 proj">
+                                <h5>Rob Graham Portfolio</h5>
+                                <p class="sum">Project: Bespoke GitHub Pages Site</p>
+                                <p>I both designed and developed this project. The main brief for this site was to keep it 'simple' and 'clean', yet take the
+                                programmer's personality and quirks to make it personal to them. It was for this reason that I designed the colour palette to be
+                                kept classic, yet with a pop of a feature colour (a colour to match the programmer's logo &amp; overall brand). I also added a slight
+                                fade to the page transition to further the idea that the site is clean, but still has a special touch.</p>
+                            </div>
+                            <div class="col-md-6 proj">
+                                <a href="http://r-ggraham.github.io/index.html" target="_blank" title="Rob Graham portfolio website"><img src="assets/media/rgraham.jpg" alt="Rob Graham portfolio website" width="100%" /></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Example in mobile carousel -->
+                    <div id="carousel" class="d-block d-lg-none carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                            <li data-target="#carousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="https://www.strichards.org.uk/build2020/" target="_blank" title="Build 2020 WordPress website"><img class="d-block w-100" src="assets/media/build2020.jpg" alt="Build 2020 WordPress website"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://www.mortimerchilde.co.uk" target="_blank" title="Mortimer Childe WordPress website"><img class="d-block w-100" src="assets/media/mortimer.jpg" alt="Mortimer Childe WordPress website"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://www.justaskecs.com" target="_blank" title="Energy Connection Services WordPress website"><img class="d-block w-100" src="assets/media/ecs.jpg" alt="Energy Connection Services WordPress website"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="http://r-ggraham.github.io/index.html" target="_blank" title="Rob Graham portfolio website"><img class="d-block w-100" src="assets/media/rgraham.jpg" alt="Rob Graham portfolio website"></a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
     <section id="about">
-        <div class="container">
-            <h1>About Me</h1>
-            <p class="lead">Hi there! My name is Francesca, but I commonly go as &lsquo;Fran&rsquo;!</p>
-            <p class="content"><strong>I am an upper second class (2:1) Computing(BSc) graduate with over 5 years of web development experience</strong>.</p>
-                <p class="content">I have technical skills in <strong>HTML5, CSS3, SASS, JavaScript</strong> &amp; relevant frameworks
-                &amp; libraries, such as <strong>Bootstrap or jQuery</strong>.</p>
-                <p class="content">I am also adept at creating graphics such as logos and posters using <strong>Photoshop and Inkscape</strong>.</p>
-                <p class="content">I have experience with back-end skills such as <strong>PHP, PDO &amp; MySQL</strong> and have a good understanding of
-                <strong>WordPress as a CMS</strong>.</p>
-        </div><!-- END CONTAINER -->
-    </section><!-- END ABOUT -->
+        <div class="row no-gutters">
+            <div class="col-xs-12 col-md-12">
+                <div class="container">
+                    <h2>About</h2>
+                    <p class="lead">Hi there! My name's Francesca, though you can call me 'Fran' if you prefer!</p>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <div class="container">
-            <h1>Projects</h1>
-            <p class="lead">Here are a few of the projects I've worked on!</p>
-            <!-- BOOTSTRAP CAROUSEL -->
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                    <li data-target="#carousel" data-slide-to="3"></li>
-                    <li data-target="#carousel" data-slide-to="4"></li>
-                    <li data-target="#carousel" data-slide-to="5"></li>
-                </ol> <!-- END INICATORS -->
-                <!-- SLIDE WRAPPER -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <a href="http://r-ggraham.github.io/index.html" target="_blank" title="Go to Rob Graham's Portfolio">
-                            <img role="presentation" src="media/eg1.png" alt="Rob Graham Porfolio">
-                        <div class="carousel-caption">
-                        <h1>Portfolio for game developer Rob Graham</h1>
-                        <p>HTML5, CSS3, Bootstrap and JavaScript</p>
-                        </div></a><!-- END CAPTION -->
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Technical Skills
+                                </button>
+                            </h5>
+                            </div>                          
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <p>HTML <span class="badge badge-light" data-toggle="tooltip" data-placement="right" data-trigger="hover click" title="up to HTML5"><i class="fas fa-question-circle"></i></span></p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-md-3">
+                                        <p>Bootstrap <span class="badge badge-light" data-toggle="tooltip" data-placement="right" data-trigger="hover click" title="up to Bootstrap 4"><i class="fa fa-question-circle"></i></span></p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <p>SASS &amp; CSS <span class="badge badge-light" data-toggle="tooltip" data-placement="right" data-trigger="hover click" title="up to CSS3"><i class="fa fa-question-circle"></i></span></p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-md-3">
+                                        <p>WordPress</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <p>JavaScript &amp; jQuery</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-md-3">
+                                        <p>PHP <span class="badge badge-light" data-toggle="tooltip" data-placement="right" data-trigger="hover click" title="from PHP 5.6 to PHP 7.2"><i class="fa fa-question-circle"></i></span></p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-12">
+                                        <p><strong>Other Skills</strong></p>
+                                        <p>My other relevent technical skills include MySQL and PDO.</p>
+                                        <p>I am comfortable creating graphics and have many years of <strong>Photoshop</strong> experience, as well as some
+                                        experience with <strong>Inkscape</strong>. I also have worked with <strong>WordPress</strong> and consider myself confident with this CMS.</p>
+                                        <p>I am a keen learner, ready to take on a challenge. I am adaptable, having lived in four different countries. I also enjoy communicating with people,
+                                        and learning about them too.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                More about me
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>I am a web developer from the UK, though I have previously lived in the Middle East - namely Doha, Qatar and Dubai, UAE.</p>
+                                <p>I found my passion for web when I was just 15, preferring to code them in school instead of visually programming as the class was told!<br/>
+                                Coding by hand entranced me, made me feel creative and empowered.</p>
+                                <p>Following iGCSE and A-level, I studied Computing at the University of Worcester and completed my course with an upper-class
+                                2:1 Bachelor of Science with honours.</p>
+                                <p>Shortly after graduation I had experience in industry, working for Worcester Web Studio and producing high-quality
+                                WordPress web applications. I'm now looking to further my skills and broaden my horizons as a web developer.</p>
+                                <p>In my spare time, I like playing video games, drawing and yoga. I also love to bake cakes (and then eat them)!</p>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <a href="https://github.com/francesca-may/LangMate" target="_blank" title="Go to the GitHub Repository">
-                            <img role="presentation" src="media/eg2.png" alt="LangMate, a third year project">
-                        <div class="carousel-caption">
-                        <h1>Third year web applications project</h1>
-                        <p>HTML5, CSS3, JavaScript, PHP, PDO, MySQL</p>
-                        </div></a><!-- END CAPTION -->
-                    </div>
-                    <div class="item">
-                        <a href="https://github.com/francesca-may/ToDo-Web-Application" target="_blank" title="Go to the Github Repository">
-                            <img role="presentation" src="media/eg3.png" alt="A Simple 'To Do' List">
-                        <div class="carousel-caption">
-                        <h1>Simple 'To Do' list application</h1>
-                        <p>HTML5, CSS3, JavaScript, PHP, PDO, MySQL</p>
-                        </div></a><!-- END CAPTION -->
-                    </div>
-                    <div class="item">
-                        <a  href="https://github.com/francesca-may/doughnutShoppe" target="_blank" title="Go to the Github Repository">
-                            <img role="presentation" src="media/eg4.png" alt="A Website for a Doughnut Shoppe">
-                        <div class="carousel-caption">
-                        <h1>Fictional business homepage</h1>
-                        <p>HTML5, CSS3, JavaScript</p>
-                        </div></a><!-- END CAPTION -->
-                    </div>
-                    <div class="item">
-                        <a href="https://github.com/francesca-may/blueBanner" target="_blank" title="Go to the Github Repository">
-                            <img role="presentation" src="media/eg5.png" alt="A simple website">
-                        <div class="carousel-caption">
-                        <h1>Fictional business homepage</h1>
-                        <p>HTML5, CSS3</p>
-                        </div></a><!-- END CAPTION -->
-                    </div>
-                    <div class="item">
-                        <a href="https://github.com/francesca-may/css3Orbit" target="_blank" title="Go to the Github Repository">
-                            <img role="presentation" src="media/eg6.png" alt="A Simple CSS3 Animation">
-                        <div class="carousel-caption">
-                        <h1>Simple CSS3 animation</h1>
-                        <p>HTML5, CSS3</p>
-                        </div></a><!-- END CAPTION -->
-                    </div>
+
                 </div>
-                <!-- NAVIGATION CONTROLS -->
-                <a class="left carousel-control" href="#carousel" data-slide="prev">
-                    <span role="button" aria-label="Previous Slide" class="glyphicon glyphicon-chevron-left"></span>
-                    <span role="button" aria-labelledby="Previous Slide" class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel" data-slide="next">
-                    <span role="button" aria-label="Next Slide" class="glyphicon glyphicon-chevron-right"></span>
-                    <span role="button" aria-labelledby="Next Slide" class="sr-only">Next</span>
-                </a>
-            </div><!-- END CAROUSEL -->
-        </div><!-- END CONTAINER -->
-    </section><!-- END PROJECTS -->
-
-    <!-- CONTACT -->
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
     <section id="contact">
-        <div class="container">
-            <h1>Contact</h1>
-            <form id="contactForm" method="POST" action="https://formspree.io/francesca.may@hotmail.co.uk">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="name">Your name</label>
-                            <input class="form-control" type="text" placeholder="Please enter your name" id="name" name="name" aria-labeledby="name">
-                        </div>
-                    </div><!-- END COL -->
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" name="email" aria-labeledby="email" placeholder="Please enter your email">
-                        </div>
-                    </div><!-- END COL -->
-                </div><!-- END ROW -->
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input class="form-control" type="text" placeholder="Please enter the subject" name="subject" id="subject" aria-labelledby="subject">
-                        </div>
-                    </div><!-- END COL -->
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="reason">Reason</label>
-                            <select class="form-control" id="reason" name="reason">
-                                <option role="option">Reason for contact</option>
-                                <option role="option">I want to hire you!</option>
-                                <option role="option">General enquiry/other</option>
-                            </select>
-                        </div>
-                    </div><!-- END COL -->
-                </div><!-- END ROW -->
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label id="messageLabel" for="message">Your Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                        </div>
-                    </div><!-- END COL -->
-                </div><!-- END ROW -->
-                <div class="buttonWrap">
-                    <button aria-labelledby="submit" id="submit" type="submit" class="form-group"><i class="fa fa-send"></i> Submit</button>
-                </div><!-- END BUTTON WRAP -->
-            </form><!-- END FORM -->
-        </div><!-- END CONTAINER -->
-    </section><!-- END CONTACT -->
+        <div class="row no-gutters">
+            <div class="col-xs-12 col-md-12">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <p class="lead">If you'd like to get in touch with me, please use the form below!</p>
 
-    <!-- FOOTER -->
-    <footer>
+                    <form action="https://formspree.io/francesca.may@hotmail.co.uk" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Enter name">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Your Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="_replyto" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="nameHelp" class="form-text text-muted">This information will not be shared with anyone else.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <label for="reason">Reason for Contact</label>
+                                            <select class="form-control" id="reason" name="reason">
+                                                <option selected disabled>Please select a reason</option>
+                                                <option>I want to hire you!</option>
+                                                <option>General enquiry/other</option>
+                                            </select>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="_subject" aria-describedby="subjectHelp" placeholder="Enter subject">                                    
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" rows="3" name="message" placeholder="Please enter your message here"></textarea>
+                        </div>
+                        <div class="col-md-12 btnWrap">
+                            <button type="submit" class="btn btn-primary">Send the message!</button>
+                        </div>
+                        <input type="hidden" name="_next" value="redirect.html" />
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="container">
-                        <a href="https://github.com/francesca-may" class="social" target="_blank"><p class="lead"><i class="fa fa-github"></i> Github</p></a>
-                        <a href="https://linkedin.com/in/francescamayellis" class="social" target="_blank"><p class="lead"><i class="fa fa-linkedin"></i> LinkedIn</p></a>
-                    </div><!-- END COONTAINER -->
-                </div> <!-- END COL -->
-                <div class="col-sm-8">
-                    <nav>
-                        <ul class="menu">
-                            <a href="#header"><li><i class="fa fa-angle-up"></i> Top</li></a>
-                            <a href="#about"><li><i class="fa fa-question"></i> About</li></a>
-                            <a href="#projects"><li><i class="fa fa-edit"></i> Projects</li></a>
-                            <a href="#contact"><li><i class="fa fa-envelope"></i> Contact</li></a>
-                        </ul><!-- END MENU -->
-                    </nav> <!-- END NAV -->
-                </div><!-- END COL -->
-            </div><!-- END ROW -->
-        </div><!-- END CONTAINER -->
-    </footer><!-- END FOOTER -->
-    <!-- JQUERY -->
-    <script src="libs/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
-    <!-- BOOTSTRAP -->
-    <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <!-- CUSTOM JS -->
-    <script src="js/main.js" type="text/javascript"></script>
-    <!-- TYPEDJS -->
-    <script src="js/typed.js" type="text/javascript"></script>
-    <!-- CUSTOM TYPED JS -->
-    <script src="js/frontType.js" type="text/javascript"></script>
+                <div class="col-xs-12 col-sm-12 col-md-6 links">
+                    <p><a href="https://github.com/francesca-may" target="_blank" title="More at my GitHub"><i class="fab fa-github"></i></a> <a href="https://linkedin.com/in/francescamayellis" target="_blank" title="More at my LinkedIn"><i class="fab fa-linkedin"></i></a></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 terms">
+                    <p class="text-muted"><a href="pp.html" target="_blank" title="Privacy Policy page">Privacy Policy<a> | <a href="tc.html" target="_blank" title="Terms and Conditions page">Terms and Conditons<a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<!-- Custom Javascript -->
+<script src="assets/js/main.js" type="text/javascript"></script>
 </body>
 </html>
