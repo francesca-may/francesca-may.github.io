@@ -335,3 +335,9 @@ footer {
         margin-bottom: 1em;
     }
 }
+
+@media screen and (max-width: 414px) {
+    #hero, #about, .redirect {
+        background-image: url(../media/414.jpeg);
+    }    
+}
