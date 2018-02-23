@@ -60,7 +60,7 @@ header {
     background-position: center;
 }
 #hero, #about, .redirect {
-    background-image: url(../media/pexels-photo-756799.jpeg);
+    background-image: url(../media/pexels-photo-7567991.jpeg);
     background-size: cover;
 }
 #hero h3 {
@@ -147,6 +147,12 @@ section {
 }
 .carousel {
     margin-bottom: 1em;
+}
+.carousel-indicators li {
+    background-color: #01579B;
+}
+.carousel-indicators .active {
+    background-color: #67add7;    
 }
 #about, #contact {
     padding-bottom: 1em;
