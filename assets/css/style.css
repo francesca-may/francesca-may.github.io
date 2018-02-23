@@ -32,15 +32,6 @@ h3, .text-muted, .sum, .lead, label, #accordion .btn-link, nav a, footer, footer
 #policy a:hover {
     opacity: .82;
 }
-#policy li {
-    list-style: none;
-    margin-bottom: .3em;
-}
-#policy li::before {
-    font-family: 'FontAwesome';
-    content: '\f061';
-    padding-right: .5em;
-}
 /* Header */
 header {
     background: radial-gradient(circle, rgba(255,255,255,.9), rgba(255,255,255,.5));
