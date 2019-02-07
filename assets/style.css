@@ -1,0 +1,44 @@
+/* General */
+/* Font Import */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+body, html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #006682;
+}
+a, a:visited {
+    color: #006682;
+    transition: .2s;
+    display: inline-block;
+}
+a:hover {
+    color: #00a8d3;
+    transform: translateY(-2px);
+}
+body {
+    background: rgba(171,234,255,1);
+}
+#box {
+    width: 500px;
+    height: 165px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background: rgba(196,243,255,1);
+    border: 4px solid #006682;
+    transition: .2s;
+    box-shadow: 5px 10px #006682;
+}
+#box:hover {
+    border-color: #00bcec;
+    color: #0094ba;
+}
+.message {
+    padding: .7em;
+    line-height: .2em;
+}
