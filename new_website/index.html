@@ -129,24 +129,26 @@
     <!-- Scroll Up -->
     <script src="js/simplescrollup.js"></script>
     <!-- Custom -->
-    <script src="js/main.js">
+    <script src="js/main.js"></script>
+    <script>
     //https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
+    var headerHeight = $("header").height();
+
     $('.viewPortfolio').on('click',function() {
         var target = $('#portfolio');
         if( target.length ) {
             event.preventDefault();
             $('html, body').stop().animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - headerHeight
             }, 900);
         }
     });
-
-    $('header a[href^="#"]').on('click', function(event) {
+    $('header a[href*="#"]').on('click', function(event) {
         var target = $(this.getAttribute('href'));
         if( target.length ) {
             event.preventDefault();
             $('html, body').stop().animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - headerHeight
             }, 900);
         }
     });
