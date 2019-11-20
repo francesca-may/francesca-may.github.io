@@ -95,6 +95,15 @@ header .container {
 .mainMenuItem:nth-child(4) {
     margin-right: 0;
 }
+.burger {
+    display: none;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 2em;
+}
+.burger:hover {
+    transform: rotateX(360deg);
+}
 /*** Sections ***/
 section {
     text-align: center;
@@ -215,8 +224,11 @@ footer i {
   }
 
   @media only screen and (max-width: 767px){
-      .nameTitleCol, [data-title]:hover::before {
+      .nameTitleCol, .mainMenuItem, [data-title]:hover::before {
         display: none;
+    }
+    .burger {
+        display: block;
     }
     header {
         padding-top: .4em;
@@ -224,9 +236,9 @@ footer i {
     ul.mainMenu {
         margin:  .2em 0 .2em 0;
     }
-    .mainMenuItem, .mainMenuItem a {
+    /* .mainMenuItem, .mainMenuItem a {
         display: block;
-    }
+    } */
     .mainMenuItem {
         padding: 0;
     }
