@@ -21,6 +21,17 @@ a:hover, a:focus, a:active {
 a:visited {
     color: inherit;
 }
+[data-title]:hover::before {
+    content: attr(data-title);
+    position: absolute;
+    bottom: -.5em;
+    padding: 3px 6px;
+    background: #339;
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
 ::-moz-selection {
     background: #C1C1E0;
     color: #fff;
@@ -47,8 +58,14 @@ button {
 }
 /* Header */
 header {
-    margin-top: .5em;
     padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: .5s;
+}
+header .container {
+    transition: .5s;
 }
 .headerBrand h5 {
     font-weight: bold;
@@ -94,6 +111,7 @@ section h2, section h3 {
 }
 /* Greeting Section */
 #greeting {
+    margin-top: 88px;
     padding: 1em;
     display: flex;
     align-items: center;
