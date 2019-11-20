@@ -213,3 +213,28 @@ footer i {
         margin: 0 auto;
     }
   }
+
+  @media only screen and (max-width: 767px){
+      .nameTitleCol, [data-title]:hover::before {
+        display: none;
+    }
+    header {
+        padding-top: .4em;
+    }
+    ul.mainMenu {
+        margin:  .2em 0 .2em 0;
+    }
+    .mainMenuItem, .mainMenuItem a {
+        display: block;
+    }
+    .mainMenuItem {
+        padding: 0;
+    }
+    .mainMenuItem a {
+        padding: .2em;
+    }
+    .mainMenuItem a:hover {
+        background-color: #339;
+        color: #fff!important;
+    }
+  }
