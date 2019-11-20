@@ -174,7 +174,16 @@ footer i {
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-    footer, .privTerms {
+    header, .mainMenuCol ul, footer, .privTerms {
         text-align: center;
+    }
+    header {
+        padding-bottom: 0;
+    }
+    .mainMenuCol ul {
+        padding: 0;
+    }
+    .logoContainer {
+        margin: 0 auto;
     }
   }
