@@ -129,6 +129,14 @@ section h2, section h3 {
     cursor: pointer;
     color: #C1C1E0;
 }
+@keyframes arrowAnimate {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(.5em);}
+    100% {transform: translateY(0);}
+}
+.viewPortfolio:hover i.fas.fa-arrow-down {
+    animation: arrowAnimate .7s infinite;
+}
 /* Portfolio Section */
 /* About Section */
 /* Contact Section */
