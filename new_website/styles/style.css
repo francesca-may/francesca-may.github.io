@@ -63,6 +63,7 @@ header {
     top: 0;
     width: 100%;
     transition: .5s;
+    z-index: 99999999999;
 }
 header .container {
     transition: .5s;
@@ -161,6 +162,7 @@ footer a {
 }
 footer i {
     font-size: 1.5em;
+    padding: .2em;
 }
 .privTerms {
     text-align: right;
