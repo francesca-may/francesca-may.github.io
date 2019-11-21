@@ -149,6 +149,9 @@ section h2, section h3 {
 }
 /* Portfolio Section */
 /* About Section */
+#about p {
+    margin-bottom: 1em;
+}
 /* Contact Section */
 /* Footer */
 footer {
