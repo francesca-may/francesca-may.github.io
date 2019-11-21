@@ -148,6 +148,27 @@ section h2, section h3 {
     animation: arrowAnimate .7s infinite;
 }
 /* Portfolio Section */
+.carousel {
+    padding-bottom: 1.5em;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
+  color: red;
+}
 /* About Section */
 #about p {
     margin-bottom: 1em;
