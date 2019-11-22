@@ -4,27 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/libs/fontawesome-free-5.7.1-web/css/all.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/libs/bootstrap-4.2.1-dist/css/bootstrap.min.css" type="text/css">
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
-    <title>Francesca Ellis | Home</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Title -->
+    <title>Francesca Ellis | Portfolio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="libs/fontawesome-pro-5.11.2-web/css/all.min.css" type="text/css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
 </head>
 <body>
+        <!-- Header -->
+        <header class="whiteBackground">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 headerBrand">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-12 logoCol">
+                                <a href="index.html">
+                                    <div class="logoContainer">
+                                        <img src="assets/img/logo2.png" alt="The logo; it is a big F for Francesca" />
+                                    </div>
+                                </a>
+                            </div><!-- .logoCol -->
+                            <div class="col-lg-10 col-md-10 col-sm-12 nameTitleCol">
+                                <h5><a href="index.html">Francesca Ellis</a></h5>
+                                <h6><a href="index.html">Front-End Developer</a></h6>
+                            </div><!-- .nameTitleCol -->
+                        </div>
+                    </div><!-- .headerBrand -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mainMenuCol">
+                        <!-- Main Menu -->
+                        <ul class="mainMenu">
+                            <!-- Hamburger -->
+                            <li class="burger"><i class="fas fa-bars" alt="Menu"></i></li>
+                            <!-- Menu Items -->
+                            <li class="mainMenuItem"><a href="#about" data-title="Find out more">About</a></li>
+                            <li class="mainMenuItem"><a href="#portfolio" data-title="Check out my work">Portfolio</a></li>
+                            <li class="mainMenuItem"><a href="#contact" data-title="Get in touch">Contact</a></li>
+                            <li class="mainMenuItem"><a href="https://www.linkedin.com/in/francescamayellis" target="_blank" data-title="Find me on LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                            <li class="mainMenuItem"><a href="https://github.com/francesca-may" target="_blank" data-title="Find me on Github"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div><!-- .mainMenuCol -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </header>
 
-    <div id="box">
-        <div class="message">
-            <h1><strong>Francesca Ellis</strong></h1>
-            <h4><em>Site under construction</em></h4>
-            <h2><a href="https://www.linkedin.com/in/francescamayellis"><i class="fab fa-linkedin"></i></a></h2>
-        </div>
-    </div>
-   
-    <!-- Scripts -->
-    <script src="assets/libs/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="assets/libs/bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <!-- Custom Scripts -->
-    <script src="assets/main.js" type="text/javascript"></script>
+        <!-- Greeting Section -->
+        <section id="greeting" class="blueBackground">
+            <div class="container">
+                <h1>Hi, I'm Fran</h1>
+                <h2>I'm a front-end developer who cares</h2>
+                <button type="button" class="viewPortfolio" onclick="">
+                    <p>View Portfolio</p>
+                    <p><i class="fas fa-arrow-down"></i></p>
+                </button>
+                <!-- .viewPortfolio -->
+            </div><!-- .container -->
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="whiteBackground">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <p>Here are some awesome projects that I've had the privilege of working on. Click on the images to go to the website and explore!</p>
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a title="Click to see the build2020 website" href="https://www.strichards.org.uk/build2020/" target="_blank"><img class="d-block w-100" src="assets/img/carousel/build2020.png" alt="https://www.strichards.org.uk/build2020/"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a title="Click to see the Carnforth School website" href="https://www.carnforthschool.org/" target="_blank"><img class="d-block w-100" src="assets/img/carousel/carnforthSchool.png" alt="https://www.carnforthschool.org/"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a title="Click to see the Fox And Fettle website" href="https://www.foxandfettle.com/" target="_blank"><img class="d-block w-100" src="assets/img/carousel/foxAndFettle.png" alt="https://www.foxandfettle.com/"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a title="Click to see the Mortimer Childe website" href="https://www.mortimerchilde.co.uk/" target="_blank"><img class="d-block w-100" src="assets/img/carousel/mortimerchilde.png" alt="https://www.mortimerchilde.co.uk/"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div><!-- #carousel -->
+            </div><!-- .container -->
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="blueBackground">
+            <div class="container">
+                <h2>About</h2>
+                <p>Hi there! I'm Francesca, a front-end developer from the UK. I love playing with code and creating simple solutions for effective web pages.
+                When I'm not being creative with code, I really enjoy creating digital art and playing video games; as well as a bit of yoga to relax the mind!</p>
+
+                <p>I like to develop with HTML5 and CSS3 (Bootstrap also comes along handy here, as well as SCSS!), adding some pizzaz with JavaScript and it's associated libraries; such as jQuery (I have dabbled with React and Angular!).
+                I am very familiar with creating custom Wordpress websites, knowing how to use PHP and MySQL to compliment development.
+                I'm not shy when it comes to learning - I have experience with C# and ASP.NET too! If there is something you need me to know, I'm happy to get on board.</p>
+
+            </div><!-- .container -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="whiteBackground">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>If you have a query or a project you'd be interested in me joining, I'd love to hear from you!</p>
+                <div id="contactFormContainer">
+                    <form id="contactForm" action="https://formspree.io/xbjjevga" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <i class="fas fa-envelope"></i>
+                                <label for="email"> Email address</label>
+                                <input type="email" name="_replyto" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Please enter your email">
+                                <small id="emailHelp" class="form-text text-muted">Your email will <strong>never</strong> be shared with anyone else.<br/>
+                                For more information, please see the <a href="privacyPolicy.html">privacy policy</a> or the <a href="termsAndConditions.html">terms and conditions</a>.</small>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <i class="fas fa-question"></i>
+                                <label for="reason">Reason for contact</label>
+                                <select name="reason" class="form-control" id="reason" aria-describedby="reasonHelp" placeholder="Please select a reason">
+                                    <option id="default" value="Please select a reason" selected disabled>Please select a reason</option>
+                                    <option value="I want to know more!">I want to know more!</option>
+                                    <option value="I want to hire you!">I want to hire you!</option>
+                                    <option value="Other!">Other</option>
+                                </select>
+                            </div>
+                        </div><!-- div row -->
+                            <div class="form-group">
+                                <i class="fas fa-pencil-alt"></i>
+                                <label for="message">Your Message</label>
+                                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Please enter a message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send</i></button>
+                            <input type="text" name="_gotcha" style="display:none" />
+                    </form><!-- contactForm -->
+                </div><!-- .contactFormContainer -->
+            </div><!-- .container -->
+        </section>
+
+        <!-- Footer -->
+        <footer class="blueBackground">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p><a href="https://www.linkedin.com/in/francescamayellis" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+                        <p><a href="https://github.com/francesca-may" target="_blank"><i class="fab fa-github"></i></a></p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 privTerms">
+                        <p><a href="privacyPolicy.html">Privacy Policy</a> |</p>
+                        <p><a href="termsAndConditions.html">Terms &amp; Conditions</a></p>
+                    </div>
+                </div>
+            </div><!-- .container -->
+        </footer>
+
+        <!-- Scroll Up https://simplescrollup.programadorwebvalencia.com/ -->
+        <a href="#up" class="simplescrollup__button simplescrollup__button--hide" data-title="Scroll Up!"><i class="fas fa-angle-up"></i></a>
+
+    <!-- JQuery -->
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="libs/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scroll Up -->
+    <script src="js/simplescrollup.js"></script>
+    <!-- Custom -->
+    <script src="js/main.js"></script>
+    <script>
+    //https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
+    var headerHeight = $("header").height();
+
+    $('.viewPortfolio').on('click',function() {
+        var target = $('#portfolio');
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - headerHeight
+            }, 900);
+        }
+    });
+    $('header a[href*="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - headerHeight
+            }, 900);
+        }
+    });
+    </script>
+
 </body>
 </html>
