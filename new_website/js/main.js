@@ -1,4 +1,3 @@
-//Nav movement
 $(document).ready(function(){
   $(".burger").on("click", function(){
     if($(".mainMenuItem").css('display') == 'none'){

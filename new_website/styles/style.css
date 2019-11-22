@@ -21,8 +21,23 @@ a:hover, a:focus, a:active {
 a:visited {
     color: inherit;
 }
-p {
+p, #contactFormContainer {
     margin-bottom: 1em;
+}
+.btn-primary {
+    background: #339;
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: .5s ease;
+    border: 2px solid #339;
+    font-weight: 900;
+    letter-spacing: .01em;
+    padding: 0.5em 1.5em 0.5 1.5em;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #339;
+    transform: rotateX(360deg);
 }
 [data-title]:hover::before {
     content: attr(data-title);
@@ -165,7 +180,7 @@ section h2, section h3 {
     background-image: none;
 }
 .carousel-control-next-icon:after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     font-size: 2.5em;
     padding: .1em .2em .1em .3em;
@@ -175,7 +190,7 @@ section h2, section h3 {
     color: #339;
 }
 .carousel-control-prev-icon:after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     font-size: 2.5em;
     padding: .1em .3em .1em .2em;
@@ -197,6 +212,39 @@ section h2, section h3 {
 }
 /* About Section */
 /* Contact Section */
+@keyframes iconAnimate {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-.2em);}
+    100% {transform: translateY(0);}
+}
+#contactForm {
+    color: #339;
+}
+#contactForm label {
+    border-top: 2px solid #339;
+    padding-top: .2em;
+    margin-top: .4em ;
+}
+#contactForm i {
+    display: block;
+    font-size: 1.5em;
+    transition: .2s ease;
+}
+#contactForm i:hover {
+    animation: iconAnimate .8s ease infinite;
+}
+#contactForm select {
+    cursor: pointer;
+    color: #339;
+}
+#contactForm .btn i {
+    display: inline-block;
+    border: 0;
+    font-size: 1em;
+}
+#contactForm .form-control:focus {
+    border: 2px solid #339;
+}
 /* Footer */
 footer {
     padding: 1em 0;

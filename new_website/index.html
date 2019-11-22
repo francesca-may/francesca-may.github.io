@@ -138,9 +138,37 @@
         <section id="contact" class="whiteBackground">
             <div class="container">
                 <h2>Contact</h2>
-                <div class="contactFormContainer">
-                    <p>contact form here</p>
-                </div>
+                <p>If you have a query or a project you'd be interested in me joining, I'd love to hear from you!</p>
+                <div id="contactFormContainer">
+                    <form id="contactForm" action="https://formspree.io/xbjjevga" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <i class="fas fa-envelope"></i>
+                                <label for="email"> Email address</label>
+                                <input type="email" name="_replyto" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Please enter your email">
+                                <small id="emailHelp" class="form-text text-muted">Your email will <strong>never</strong> be shared with anyone else.<br/>
+                                For more information, please see the <a href="privacyPolicy.html">privacy policy</a> or the <a href="termsAndConditions.html">terms and conditions</a>.</small>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <i class="fas fa-question"></i>
+                                <label for="reason">Reason for contact</label>
+                                <select name="reason" class="form-control" id="reason" aria-describedby="reasonHelp" placeholder="Please select a reason">
+                                    <option id="default" value="Please select a reason" selected disabled>Please select a reason</option>
+                                    <option value="I want to know more!">I want to know more!</option>
+                                    <option value="I want to hire you!">I want to hire you!</option>
+                                    <option value="Other!">Other</option>
+                                </select>
+                            </div>
+                        </div><!-- div row -->
+                            <div class="form-group">
+                                <i class="fas fa-pencil-alt"></i>
+                                <label for="message">Your Message</label>
+                                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Please enter a message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send</i></button>
+                            <input type="text" name="_gotcha" style="display:none" />
+                    </form><!-- contactForm -->
+                </div><!-- .contactFormContainer -->
             </div><!-- .container -->
         </section>
 
