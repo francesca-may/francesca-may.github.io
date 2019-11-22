@@ -21,6 +21,9 @@ a:hover, a:focus, a:active {
 a:visited {
     color: inherit;
 }
+p {
+    margin-bottom: 1em;
+}
 [data-title]:hover::before {
     content: attr(data-title);
     position: absolute;
@@ -139,6 +142,9 @@ section h2, section h3 {
     cursor: pointer;
     color: #C1C1E0;
 }
+.viewPortfolio p {
+    margin-bottom: 0;
+}
 @keyframes arrowAnimate {
     0% {transform: translateY(0);}
     50% {transform: translateY(.5em);}
@@ -151,28 +157,45 @@ section h2, section h3 {
 .carousel {
     padding-bottom: 1.5em;
 }
+.carousel-item a:hover {
+    opacity: .8;
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-image: none;
+    background-image: none;
 }
-.carousel-control-next-icon:after
-{
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f054";
-  color: red;
+.carousel-control-next-icon:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2.5em;
+    padding: .1em .2em .1em .3em;
+    border-radius: 100%;
+    background: #fff;
+    content: "\f054";
+    color: #339;
 }
-
 .carousel-control-prev-icon:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    font-size: 2.5em;
+    padding: .1em .3em .1em .2em;
+    border-radius: 100%;
+    background: #fff;
     content: "\f053";
-  color: red;
+    color: #339;
+}
+.carousel-indicators {
+    padding-bottom: .5em;
+}
+.carousel-indicators li {
+    width: 50px;
+    height: 10px;
+    background-color: #8c8cd9;
+}
+.carousel-indicators li.active {
+    background-color: #339;
 }
 /* About Section */
-#about p {
-    margin-bottom: 1em;
-}
 /* Contact Section */
 /* Footer */
 footer {
