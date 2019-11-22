@@ -137,6 +137,10 @@ section h2, section h3 {
 #portfolio, #about, #contact {
     padding-top: 1.5em;
 }
+.privacyTerms a {
+    font-weight: 900;
+    text-transform: uppercase;
+}
 /* Greeting Section */
 #greeting {
     margin-top: 88px;
@@ -245,6 +249,9 @@ section h2, section h3 {
 #contactForm .form-control:focus {
     border: 2px solid #339;
 }
+#contactForm small a {
+    color: #339;
+}
 /* Footer */
 footer {
     padding: 1em 0;
@@ -276,7 +283,7 @@ footer i {
     display: inline-block;
     text-align: left;
 }
-
+/* Scroll */
 .simplescrollup__button {
     font-size: 2em;
     border-radius: 100%;
