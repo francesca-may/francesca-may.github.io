@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Imporant meta information to make the page as rigid as possible on mobiles, to avoid unintentional zooming on the page itself  -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPIAHKYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATw09/08NPf/yABymAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE8NPf9mBDD/ZjcE/08NPf+PX5b/AAAAAAAAAACPX5b/ZjcE/wAAAAAAAAAAAAAAAAAAAAAAAAAAj1+W/2Y3BP9mBDD/Tw09//IAHKZmBDD/ZjcE/49flv8AAAAAAAAAAGYEMP8AAAAAAAAAAAAAAAAAAAAAAAAAAE8NPf9mBDD/8gAcpvIAHKbyABym8gAcpmYEMP9PDT3/AAAAAAAAAABmNwT/AAAAAAAAAAAAAAAAAAAAAE8NPf9mBDD/8gAcpvIAHKZPDT3/j1+W/2YEMP9mNwT/j1+W/wAAAAAAAAAAZgQw/wAAAAAAAAAAAAAAAI9flv9mBDD/8gAcpgAAAABmBDD/ZjcE/2YEMP9mNwT/ZgQw//IAHKYAAAAAj1+W/2Y3BP8AAAAAAAAAAAAAAABPDT3/j1+W/wAAAACPX5b/ZjcE/2YEMP9mNwT/ZgQw/08NPf8AAAAAAAAAAE8NPf9PDT3/AAAAAAAAAAAAAAAAZgQw//IAHKYAAAAAZjcE/2YEMP9mBDD/ZjcE/2Y3BP+PX5b/AAAAAAAAAABmNwT/j1+W/wAAAAAAAAAAAAAAAGY3BP/yABymAAAAAI9flv9mNwT/ZgQw/2YEMP+PX5b/8gAcpgAAAAAAAAAATw09//Jelf8AAAAAAAAAAAAAAABmBDD/8gAcpgAAAACPX5b/Tw09//IAHKYAAAAAAAAAAAAAAABPDT3/ZjcE//IAHKYAAAAAAAAAAAAAAAAAAAAAj1+W/49flv8AAAAAAAAAAE8NPf9mNwT/ZjcE/2Y3BP9mNwT/Tw09//Jelf8AAAAAAAAAAAAAAAAAAAAAAAAAAI9flv9PDT3/8gAcpgAAAAAAAAAA8gAcpo9flv+PX5b/8gAcpgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj1+W/08NPf+PX5b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj1+W/08NPf/yABymAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPIAHKYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+8AAP/xAAD8GQAA8A0AAPANAADgDQAAxAkAAMgZAADIGQAAyBkAAMjjAADMBwAAxh8AAOP/AAD4/wAA/38AAA==" rel="icon" type="image/x-icon" />
+    
+    <title>Galaxy</title>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="../styles.css" />
+    
+</head>
+<body>
+
+  <canvas class="webgl"></canvas>
+
+  <div id="galaxyHomeBtn" class="btn homeBtn">Home</div>
+
+  <div id="galaxyTitle" class="projectTitle">Three.js Galaxy Generator</div>
+  
+</body>
+
+<!-- The main Three.js file -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+
+<!-- Orbit Controls -->
+<script src="https://unpkg.com/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+
+<!-- dat.gui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+
+<!-- My JS -->
+<script src="galaxy.js"></script>
+
+</html>
