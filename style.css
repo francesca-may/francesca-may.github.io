@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+body {
+    background-image: url("./pexels-pixabay-358528.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 80px;
+    font-weight: 300;
+}
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        font-size: 50px;
+    }
+  }
